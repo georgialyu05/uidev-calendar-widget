@@ -9,7 +9,11 @@ const timezones = [
 ]
 
 const barHeights = [14, 20, 26]
-const avatars = ["/avatar/avatar1.jpg", "/avatar/avatar2.jpg", "/avatar/avatar3.jpg"]
+const avatars = [
+  `${import.meta.env.BASE_URL}avatar/avatar1.jpg`,
+  `${import.meta.env.BASE_URL}avatar/avatar2.jpg`,
+  `${import.meta.env.BASE_URL}avatar/avatar3.jpg`,
+]
 
 export default function App() {
   return (
@@ -93,7 +97,7 @@ function CalendarWidget() {
                 transition: "background 0.2s ease"
               }}
             >
-              <img src="/icon-camera.svg" alt="camera" style={{ width: 16, filter: "brightness(0) invert(1)" }} />
+              <img src={`${import.meta.env.BASE_URL}icon-camera.svg`} alt="camera" style={{ width: 16, filter: "brightness(0) invert(1)" }} />
             </motion.div>
           )}
         </AnimatePresence>
@@ -129,7 +133,7 @@ function CalendarWidget() {
 
             <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 14, color: "#000" }}>
               <span>Guests</span>
-              <img src="/icon-global.svg" alt="global" style={{ width: 16, opacity: 0.25, verticalAlign: "middle" }} />
+              <img src={`${import.meta.env.BASE_URL}icon-global.svg`} alt="global" style={{ width: 16, opacity: 0.25, verticalAlign: "middle" }} />
               <span style={{ color: "rgba(0,0,0,.6)", fontWeight: 360 }}>3</span>
             </div>
 
