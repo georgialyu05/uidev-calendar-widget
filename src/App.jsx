@@ -66,7 +66,7 @@ function CalendarWidget() {
         <div style={{
           display: "inline-flex",
           alignItems: "center",
-          background: "#fff3f7",
+          background: "#ffeff4",
           color: "#f40d3b",
           fontSize: 12,
           fontWeight: 400,
