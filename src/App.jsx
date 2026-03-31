@@ -22,7 +22,7 @@ export default function App() {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      background: "#ffffff",
+      background: "#F7F7F7",
     }}>
       <CalendarWidget />
     </div>
@@ -46,7 +46,7 @@ function CalendarWidget() {
       animate={{ width: isExpanded ? 400 : 200 }}
       transition={{ duration: 0.35, ease: [0.34, 1.2, 0.64, 1] }}
       style={{
-        background: "#ffffff",
+        background: "#F7F7F7",
         border: "1px solid rgba(0,0,0,.1)",
         borderRadius: 16,
         padding: "16px 16px",
